@@ -1,0 +1,228 @@
+/* ====== RESET BÁSICO ====== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth; /* Para que el salto del menú sea suave */
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f1115;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* ====== UTILIDADES ====== */
+.contenedor{
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.seccion{
+  padding: 70px 0;
+}
+
+.subtexto{
+  opacity: 0.9;
+  margin: 10px 0 25px;
+}
+
+h2{
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* ====== HEADER ====== */
+.header{
+  background: #151a24;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.header-contenido{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav{
+  display: flex;
+  gap: 16px;
+}
+
+.nav a{
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.nav a:hover{
+  background: rgba(255,255,255,0.12);
+}
+
+/* ====== CARDS ====== */
+.card{
+  background: #151a24;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+/* ====== GALERÍA (4 imágenes mínimo) ====== */
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.item{
+  background: #151a24;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.item img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.item figcaption{
+  padding: 10px;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+/* ====== BOTÓN ====== */
+.btn{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #2d7bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* ====== FOOTER ====== */
+.footer{
+  background: #151a24;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 18px 0;
+  text-align: center;
+}
+
+/* ====== MEDIA QUERIES (OBLIGATORIO EN LA GUÍA) ====== */
+/* Ejemplo 1: tablets */
+@media (max-width: 900px){
+  .galeria{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-2{
+    grid-template-columns: 1fr;
+  }
+  .nav{
+    gap: 8px;
+  }
+}
+
+/* Ejemplo 2: celulares */
+@media (max-width: 520px){
+  .header-contenido{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .galeria{
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== CONTACTO ===== */
+
+.contacto{
+  background-color: #111827;
+}
+
+/* FORMULARIO */
+
+.formulario{
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: white;
+  color: black;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* LABELS */
+
+.formulario label{
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* INPUTS */
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+}
+
+/* OPCIONES */
+
+.opciones{
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.opciones label{
+  font-weight: normal;
+}
+
+/* BOTÓN */
+
+.formulario button{
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #006b1f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario button:hover{
+  background-color: #004d17;
+}
