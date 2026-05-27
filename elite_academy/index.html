@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ELITE ACADEMY</title>
+</head>
+<body>
+
+  <header class="header" id="inicio">
+    <div class="contenedor header-contenido">
+      <div class="logo">Elite Academy</div>
+
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="seccion" id="nosotros">
+      <div class="contenedor">
+        <h2>Nosotros</h2>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Misión</h3>
+            <p>
+              En Elite Academy formamos jóvenes a través del fútbol y el desarrollo personal,
+              fortaleciendo cuerpo y mente con disciplina, acompañamiento y educación para la vida.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Visión</h3>
+            <p>
+              Ser una academia referente en Bogotá que integre entrenamiento deportivo de alto nivel
+              con formación personal, impactando positivamente la vida de los jóvenes y sus familias.
+            </p>
+          </article>
+        </div>
+
+        <article class="card">
+          <h3>Objetivos</h3>
+          <ul>
+            <li>Reducir el tiempo libre mal aprovechado ofreciendo un objetivo claro: entrenar y superarse.</li>
+            <li>Formar hábitos de disciplina, responsabilidad y liderazgo en jóvenes.</li>
+            <li>Brindar acompañamiento psicológico deportivo para fortalecer la mentalidad competitiva.</li>
+            <li>Apoyar proyectos de vida y crecimiento personal, no solo rendimiento físico.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="seccion" id="productos">
+      <div class="contenedor">
+        <h2>Productos o Servicios</h2>
+        <p class="subtexto">
+          Entrenamiento de fútbol + formación personal + acompañamiento psicológico deportivo.
+        </p>
+
+        <div class="galeria">
+          <figure class="item">
+            <img src="img/futbol1.jpg" alt="Entrenamiento técnico de fútbol">
+            <figcaption>Entrenamiento técnico</figcaption>
+          </figure>
+
+          <figure class="item">
+            <img src="img/futbol2.jpg" alt="Preparación física">
+            <figcaption>Preparación física</figcaption>
+          </figure>
+
+          <figure class="item">
+            <img src="img/mentalidad.jpg" alt="Psicología deportiva">
+            <figcaption>Psicología deportiva</figcaption>
+          </figure>
+
+          <figure class="item">
+            <img src="img/equipo.jpg" alt="Trabajo en equipo y liderazgo">
+            <figcaption>Liderazgo y equipo</figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="contacto" class="seccion contacto">
+
+      <div class="contenedor">
+
+        <h2>Contáctenos</h2>
+
+        <p>
+          Déjanos tus datos para recibir más información sobre Elite Academy.
+        </p>
+
+      <div class="info-contacto">
+
+        <p>
+          <strong>Dirección:</strong>
+          Bogotá D.C., Colombia
+        </p>
+
+        <p>
+          <strong>Teléfono:</strong>
+          300 123 4567
+        </p>
+
+        <p>
+          <strong>Correo:</strong>
+          eliteacademy@gmail.com
+        </p>
+
+      </div>
+
+      <form class="formulario">
+
+        <label for="nombre">
+          Nombre completo:
+        </label>
+
+        <input 
+          type="text"
+          id="nombre"
+          placeholder="Escribe tu nombre"
+        >
+
+        <label for="correo">
+          Correo electrónico:
+        </label>
+
+        <input 
+          type="email"
+          id="correo"
+          placeholder="correo@gmail.com"
+        >
+
+      
+        <label for="telefono">
+          Teléfono:
+        </label>
+
+        <input 
+          type="tel"
+          id="telefono"
+          placeholder="3001234567"
+        >
+
+      
+        <label for="servicio">
+          ¿Qué servicio te interesa?
+        </label>
+
+        <select id="servicio">
+
+          <option>
+            Entrenamiento de fútbol
+          </option>
+
+          <option>
+            Psicología deportiva
+          </option>
+
+          <option>
+            Formación personal
+          </option>
+
+          <option>
+            Todos los servicios
+          </option>
+
+        </select>
+
+      
+        <label>
+          ¿Has entrenado fútbol antes?
+        </label>
+
+        <div class="opciones">
+
+        <label>
+          <input type="radio" name="exp">
+          Sí
+        </label>
+
+        <label>
+          <input type="radio" name="exp">
+          No
+        </label>
+
+      </div>
+
+      
+      <label for="mensaje">
+        Mensaje:
+      </label>
+
+      <textarea 
+        id="mensaje"
+        rows="5"
+        placeholder="Escribe tu mensaje"
+      ></textarea>
+
+      <button type="button">
+        Enviar datos
+      </button>
+    </form>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+    <div class="contenedor footer-contenido">
+      <p>© 2026 Elite Academy - Alejandro Marulanda Cadena</p>
+    </div>
+  </footer>    
+</body>
+</html>
